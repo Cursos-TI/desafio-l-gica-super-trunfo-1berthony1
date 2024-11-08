@@ -16,7 +16,7 @@ void cadastrarCarta(Carta *c) {
     printf("Digite o nome da cidade: ");
     getchar();  // Para limpar o buffer do teclado
     fgets(c->nomeCidade, sizeof(c->nomeCidade), stdin);
-    c->nomeCidade[strcspn(c->nomeCidade, "\n")] = '\0';  // Remover o '\n' do final
+    
     printf("Digite o estado: ");
     fgets(c->estado, sizeof(c->estado), stdin);
     c->estado[strcspn(c->estado, "\n")] = '\0';  // Remover o '\n' do final
